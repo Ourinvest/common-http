@@ -15,7 +15,7 @@ def ourinvest_output_json(data, code, headers=None):
     return resp
 
 
-class OurinvestAPI(Api):
+class OurinvestAPITeste(Api):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.representations = OrderedDict(
