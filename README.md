@@ -1,9 +1,3 @@
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
-
 # COMMOM-HTTP-FASTAPI
 
 Project to use as submodule in FastApi solutions.
@@ -20,9 +14,9 @@ Architeture of the project if given below.
 
 While in the responses file there are methods defined to be used in the api routes, the other two contains definitions for the OpenAPI document generation.
 
-- In the <o> schemas.py </o> file it is defined the structure of the possible responses, always thinking in a JSONResponse method;
+- In the schemas.py file it is defined the structure of the possible responses, always thinking in a JSONResponse method;
 
-- In the <o> definitions.py </o> there are dictionaries describing possible responses codes for each type of request [GET, POST, PUT, DELETE] and its definitions.
+- In the definitions.py there are dictionaries describing possible responses codes for each type of request [GET, POST, PUT, DELETE] and its definitions.
 ---
 ## Usage
 #### Submodule
