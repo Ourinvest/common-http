@@ -19,20 +19,17 @@ While in the responses file there are methods defined to be used in the api rout
 - In the definitions.py there are dictionaries describing possible responses codes for each type of request [GET, POST, PUT, DELETE] and its definitions.
 ---
 ## Usage
-#### Submodule
+#### Installation
 
-First of all, it is needed to add the submodule to the desired directory and define the main branch as the one to be tracked.
+The following command will install from the main branch. **Be careful**.
 
-```
-git submodule add -b main [URL to Git repo]
-git submodule init
-```
+`pip install git+ssh://github.com/Ourinvest/common-http.git`
 
-To update its changes, it is possible to run the command below:
+You can choose manually the branch too, using:
 
-```
-git submodule update
-```
+`pip install git+ssh://github.com/Ourinvest/common-http.git@<BRANCH_NAME>`
+
+As this is private repository, correct authentication will be required (a.k.a Token). 
 
 #### Returning responses
 
