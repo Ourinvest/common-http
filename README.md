@@ -23,11 +23,15 @@ While in the responses file there are methods defined to be used in the api rout
 ###### SSH
 The following command will install from the main branch. **Be careful**.
 
-`pip install git+ssh://git@github.com/Ourinvest/common-http.git`
+```bash
+pip install git+ssh://git@github.com/Ourinvest/common-http.git
+```
 
 You can choose manually the branch too, using:
 
-`pip install git+ssh://git@github.com/Ourinvest/common-http.git@development`
+```bash
+pip install git+ssh://git@github.com/Ourinvest/common-http.git@development
+```
 
 As this is private repository, correct authentication will be required (a.k.a Token). 
 
