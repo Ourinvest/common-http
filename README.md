@@ -20,16 +20,33 @@ While in the responses file there are methods defined to be used in the api rout
 ---
 ## Usage
 #### Installation
-
+###### SSH
 The following command will install from the main branch. **Be careful**.
 
 `pip install git+ssh://git@github.com/Ourinvest/common-http.git`
 
 You can choose manually the branch too, using:
 
-`pip install git+ssh://git@github.com/Ourinvest/common-http.git@<BRANCH_NAME>`
+`pip install git+ssh://git@github.com/Ourinvest/common-http.git@development`
 
 As this is private repository, correct authentication will be required (a.k.a Token). 
+
+###### HTTPS
+
+Create a token 
+[here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), 
+or get one from AWS Secret Manager
+
+```bash
+pip install git+https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/Ourinvest/common-http.git
+```
+
+Or, for specfic branch:
+
+```bash
+pip install git+https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/Ourinvest/common-http.git@${BRANCH_NAME}
+```
+
 #### Returning responses
 
 As stated, in the responses.py file there is the class <g>CustomResponse</g>, in which there are static methods to be called generating a specific response.
