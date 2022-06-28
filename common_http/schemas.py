@@ -6,14 +6,18 @@ class CustomHttpModel(BaseModel):
     response: Any
 
 
-class PaginateModel(CustomHttpModel):
-    response: List[Any]
+class PageCursor(BaseModel):
     previous_page: Union[int, None]
     next_page: Union[int, None]
     has_previous: Union[bool, None]
     has_next: Union[bool, None]
     total: Union[int, None]
     pages: Union[int, None]
+        
+
+class PaginateModel(CustomHttpModel):
+    response: List[Any]
+    page_cursor: PageCursor
 
 
 class CustomHttpErrorModel(BaseModel):
